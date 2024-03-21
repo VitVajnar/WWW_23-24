@@ -1,74 +1,85 @@
-*{
+body {
     margin: 0;
     padding: 0;
-    font-family: Montserrat,sans-serif;  /*FONT ktery bude pro CELOU stranku*/
+    font-family: Montserrat, sans-serif;
+    /*FONT ktery bude pro CELOU stranku*/
+    background-image: url(Pozadi/jeste\ pouziju.png);
 }
 
-.pozadi{
+
+
+.pozadi {
     width: 100%;
     height: 100vh;
-    background-image: url(pozadi\ uvodni\ stranky.png);
-    background-position:center;
-    background-size: cover;  
-    
+    background-image: url(Pozadi/Pozadi\ uvodni\ stranky.png);
+    background-position: center;
+    background-size: cover;
+
+
+
 }
 
-.menu{
-    background-color:rgb(10, 10, 37);  /* tmave modra bude barva pro CELOU stranku*/
+.menu {
+    background-color: rgb(10, 10, 37);
+    /* tmave modra bude barva pro CELOU stranku*/
     width: 100%;
     margin: auto;
     height: 12%;
     color: rgb(255, 255, 255);
-    font-size:26px ;
+
+
     display: flex;
     align-items: center;
-    justify-content: space-around; 
-    
-}
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+    justify-content: space-around;
 }
 
-                                /*EFEKT pro odkazy MENU */
-.menu ul li{
+
+/*EFEKT pro odkazy MENU */
+.menu ul li {
     list-style: none;
     display: inline-block;
     margin: 50px;
     position: relative;
 }
-.menu ul li a{
+
+.menu ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    font-size: 20px;
 }
-.menu ul li::after{
+
+.menu ul li::after {
     content: "";
     height: 2px;
     width: 0;
     background: rgb(255, 255, 255);
     position: absolute;
-    left: 0 ;
+    left: 0;
     bottom: -10px;
     transition: 0.4s;
-    
+
 }
-.menu ul li:hover::after{
+
+.menu ul li:hover::after {
+
     width: 100%;
     color: rgb(255, 255, 255);
 }
-                            /*KONEC efektu pro MENU */
+
+/*KONEC efektu pro MENU */
 
 
-
-.text{
+.text {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-align: center;
-    
+
 }
-.text h1{                                            /*INFO a TEXT na UVODNI strane*/
-    font-size: 40px;
+
+.text h1 {
+    /*INFO a TEXT na UVODNI strane*/
+    font-size: 37px;
     position: absolute;
     top: 42%;
     left: 50%;
@@ -76,13 +87,14 @@ a{
     font-weight: normal;
 }
 
-.tlacitko{
-    
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
+.tlacitko {
+
+    width: 225px;
+    height: 60px;
+    font-size: 25px;
     position: absolute;
-    top: 54%;                                       /*TLACITKO KTERE SMERUJE NA YTB VIDEO O F1 */
+    top: 57%;
+    /*TLACITKO KTERE SMERUJE NA YTB VIDEO O F1 */
     left: 50%;
     display: flex;
     align-items: center;
@@ -94,18 +106,522 @@ a{
     text-transform: uppercase;
 }
 
+.tlacitko a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/*KONEC UVODNI STRANKY */
+/*ZACATEK INFORMACE O JEZDCICH A TYMECH */
+.center {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.Main {
+    width: 100%;
+    float: left;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hlavni {
+    float: left;
+    width: 100%;
+    font-weight: normal;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    padding-top: 60px;
+
+}
+
+.informace {
+    float: left;
+    font-weight: normal;
+    width: 100%;
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+}
+
+h3 {
+    float: left;
+    font-size: 40px;
+    width: 100%;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 5px;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+}
 
 
+/* ZACATEK REDBULL*/
+.RedBullRacing {
+    float: left;
+    width: 80%;
+    min-height: 510px;
+    border-radius: 25px;
+    background-color: rgb(10, 10, 37);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+
+
+}
+
+.RedBullRacing a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.textredbull {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+
+.redbullauto {
+    width: 300px;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+
+}
+
+
+
+.textredbull a:hover {
+    text-decoration: underline;
+}
+
+/* KONEC REDBULL */
+/* ZACATEK FERRARI */
+.Ferrari {
+    float: left;
+    width: 80%;
+    min-height: 510px;
+    border-radius: 25px;
+    background-color: rgb(10, 10, 37);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.Ferrari a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.textFerrari {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.ferrariauto {
+    float: left;
+    width: 300px;
+}
+
+.obrazekferrari {}
+
+.textFerrari a:hover {
+    text-decoration: underline;
+
+}
+
+/*  KONEC FERRARI */
+/* ZACATEK MERCEDES */
+.Mercedes {
+    float: left;
+    width: 80%;
+    min-height: 540px;
+    border-radius: 25px;
+    background-color: rgb(10, 10, 37);
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+
+.Mercedes a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.textMercedes {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.mercedesauto {
+    float: left;
+    width: 300px;
+    justify-content: center;
+}
+
+.obrazekmercedes {}
+
+.textMercedes a:hover {
+    text-decoration: underline;
+}
+
+/*  KONEC MERCEDES */
+/* ZACATEK MCLAREN */
+.McLaren {
+    float: left;
+    width: 80%;
+    min-height: 520px;
+    border-radius: 25px;
+    background-color: rgb(10, 10, 37);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.McLaren a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.textMclaren {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.mclarenauto {
+    float: left;
+    width: 300px;
+}
+
+.obrazekmclaren {
+    margin: 0 auto;
+
+}
+
+.textMclaren a:hover {
+    text-decoration: underline;
+}
+
+/*  KONEC MCLAREN */
+/* ZACATEK ASTON MARTIN */
+.AstonMartin {
+    float: left;
+    width: 85%;
+    min-height: 550px;
+    border-radius: 25px;
+    background-color: rgb(10, 10, 37);
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.AstonMartin a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.textAstonmartin {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.astonmartinauto {
+    float: left;
+    width: 300px;
+}
+
+.obrazekastonmartin {
+    justify-content: center;
+}
+
+.textAstonmartin a:hover {
+    text-decoration: underline;
+}
+
+/* KONEC ASTONMARTIN */
+/* ZACATEK HAASF1TEAM */
+.HaasF1Team {
+    float: left;
+    width: 80%;
+    min-height: 480px;
+    border-radius: 25px;
+    background-color: rgb(10, 10, 37);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.HaasF1Team a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.textHaasf1team {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.haasf1teamauto {
+    float: left;
+    width: 300px;
+}
+
+.obrazekhaasf1team {}
+
+.textHaasf1team a:hover {
+    text-decoration: underline;
+}
+
+/* KONEC HASSF1TEAM */
+/* ZACATEK WILLIAMS */
+
+.Williams {
+    float: left;
+
+    width: 80%;
+    min-height: 520px;
+    border-radius: 25px;
+    background-color: rgb(10, 10, 37);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.Williams a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.textWilliams {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.williamsauto {
+    float: left;
+    width: 300px;
+}
+
+.obrazekwilliams {}
+
+.textWilliams a:hover {
+    text-decoration: underline;
+}
+
+/*  KONEC WILLIAMS */
+/* ZACATEK KICKSAUBER */
+.KickSauber {
+    float: left;
+    width: 80%;
+    min-height: 480px;
+    border-radius: 25px;
+    background-color: rgb(10, 10, 37);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.KickSauber a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.textKicksauber {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.kicksauberauto {
+    float: left;
+    width: 300px;
+}
+
+.obrazekkicksauber {}
+
+.textKicksauber a:hover {
+    text-decoration: underline;
+}
+
+/* KONEC KICK SAUBER */
+/* ZACATEK RB */
+.RB {
+    float: left;
+    width: 80%;
+    min-height: 520px;
+    border-radius: 25px;
+    background-color: rgb(10, 10, 37);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.RB a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.textRB {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.rbauto {
+    float: left;
+    width: 300px;
+
+}
+
+.obrazekrb {}
+
+.textRB a:hover {
+    text-decoration: underline;
+}
+
+/* KONEC RB */
+/* ZACATEK ALPINE */
+.Alpine {
+    float: left;
+    width: 80%;
+    min-height: 480px;
+    border-radius: 25px;
+    background-color: rgb(10, 10, 37);
+    margin-top: 20px;
+
+}
+
+.Alpine a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.textAlpine {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.alpineauto {
+    float: left;
+    width: 300px;
+}
+
+.obrazekalpine {}
+
+.textAlpine a:hover {
+    text-decoration: underline;
+}
+
+/* KONEC ALPINE */
+
+/* ZACATEK INFO JEZDCI */
+/* ZACATEK INFO JEZDCI */
+/* ZACATEK INFO JEZDCI */
+h4 {
+
+    margin-bottom: 40px;
+}
+
+.jezdci {
+    float: left;
+    background-color: rgb(10, 10, 37);
+    width: 900px;
+    height: 550px;
+    margin: 0 auto;
+}
+.jezdciinfo {
+    float: left;
+    width: 100%;
+    min-height: 800px;
+    display: flex;  
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
     
-
-
-
-
+}
+h4 {
+    margin-bottom: 48px;
+}
+.jezdciimg {
+    float: left;
+    width: 500px;
+    height: 400px;
     
+}
+.jezdcitext {
+    float: left;
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: left;
+    
+}
 
 
+.jezdciF1{
+    float: left;
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 0;
+    
+}
 
-
-
-
-
+/* KONEC INFO JEZDCI */
